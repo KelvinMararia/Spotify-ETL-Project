@@ -106,5 +106,4 @@ if __name__ == "__main__":
     connection.close()
     print("Closed database successfully")
 
-
 #The end
