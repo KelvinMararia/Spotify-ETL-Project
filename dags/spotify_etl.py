@@ -109,5 +109,4 @@ def run_spotify_etl():
     connection.close()
     print("Closed database successfully")
 
-
 #The end
