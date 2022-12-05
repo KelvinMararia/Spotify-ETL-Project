@@ -24,14 +24,14 @@ def check_if_valid_data(df: pd.DataFrame) ->bool:
     if df.isnull().values.any():
         raise Exception("Null values found")
 
-    # Check if all timestamps are of 3 days ago
+    # Check if all timestamps are of 14 days ago
     # manyDaysAgo = datetime.now() - timedelta(days = 14)
     # manyDaysAgo = manyDaysAgo.replace(hour=0, minute=0, second=0, microsecond=0)
     
     # timestamps = df["timestamp"].to_list()
     # for timestamp in timestamps:
     #     if datetime.strptime(timestamp, "%Y-%m-%d") < manyDaysAgo:
-    #         raise Exception("At least one of the received songs was not played within the last 72 hours")
+    #         raise Exception("At least one of the received songs was not played within the last 2 weeks")
     
     return True
 
